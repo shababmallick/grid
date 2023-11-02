@@ -1,0 +1,15 @@
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(2);
+    width: 620px;
+    gap: 10px;
+    margin: 100px auto;
+    border: 1px solid black;
+    background-color: aqua;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}

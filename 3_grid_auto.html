@@ -1,0 +1,39 @@
+<!-- grid-auto-row and grid-auto-column are properties
+     in CSS Grid that allow you to define the size and behavior
+     of implicitly created rows and columns in a grid layput
+     when the number of rows and columns is not explicitly 
+     specified. These properties help control how grid items
+     are placed in the grid when they dont fit into the explicitly
+     defined rows and columns.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-columns: repeat(3,100px );
+            grid-auto-rows: 100px;
+            grid-auto-columns: 100px;
+            gap: 10px;
+        }
+        .grid-item{
+            background-color: lightblue;
+            border: 1px solid blue;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-auto-row and grid-auto-column</title>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+      </div>
+</body>
+</html>
